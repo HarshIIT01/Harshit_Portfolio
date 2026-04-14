@@ -378,7 +378,9 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <!-- IMAGE (NOT CLIPPED) -->
         <img class="hero-img" src="IMG_20260206_211610-removebg-preview.png" alt="Harshit"/>
     </div>
-
+    <div class="hero-secondary-img-wrap">
+        <img class="hero-img-secondary" src="(2).png" alt="Secondary Harshit image"/>
+      </div>
   </div>
 </section>
 
@@ -405,7 +407,22 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
   width:340px;
   height:380px;
 }
+  
+.hero-secondary-img-wrap{
+  margin-top:1.3rem;
+  width:340px;
+  display:flex;
+  justify-content:center;
+}
 
+.hero-img-secondary{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 20px 55px rgba(0,0,0,0.18);
+}
+  
 /* BACK GLOW */
 .hero-3d-glow{
   position:absolute;
@@ -468,12 +485,12 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
       <div class="avatar-name">Harshit Goswami</div>
       <div class="avatar-role">Aspiring AI/ML Engineer</div>
       <div class="about-row"><span class="ri">📍</span><span>Udaipur, Rajasthan</span></div>
-      <div class="about-row"><span class="ri">🎓</span><span>B.Tech AI — Class of 2027</span></div>
+      <div class="about-row"><span class="ri">🎓</span><span>B.Tech CSE (AIML) — Class of 2027</span></div>
       <div class="about-row"><span class="ri">🔬</span><span>Research Intern @ IIT Patna</span></div>
       <div class="about-row"><span class="ri">✉️</span><span>harshit.goswami.engg@gmail.com</span></div>
       <div class="about-row"><span class="ri">🤝</span><span>Open to internships & collaboration</span></div>
       <br/>
-<a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline" style="width:100%;justify-content:center">View GitHub →</a>
+<a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline" style="width:100%;justify-content:center"><img src="github.png" alt="Github">View GitHub →</a>
     </div>
     <div class="about-bio reveal">
       <p>I'm an AI/ML enthusiast and builder currently pursuing my B.Tech in Artificial Intelligence at Vellore Institute of Technology, Chennai. I focus on creating intelligent, scalable systems that solve real-world problems — not just models, but complete solutions that deliver real impact.</p>
@@ -492,7 +509,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
   <div class="edu-card reveal">
     <div class="edu-icon">🎓</div>
     <div>
-      <div class="edu-deg">B.Tech. in Computer Science — Artificial Intelligence</div>
+      <div class="edu-deg">B.Tech. in Computer Science — Artificial Intelligence & Machile Learning</div>
       <div class="edu-inst">Vellore Institute of Technology (VIT), Chennai</div>
       <div class="edu-year">2023 – 2027 · Expected Graduation</div>
     </div>
@@ -590,20 +607,22 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-num">01</span>
         <span class="proj-cat-tag">Deep Learning</span>
       </div>
-      <div class="proj-title">Anomaly Detection in Spacecraft</div>
-      <div class="proj-desc">Deep learning model for spacecraft telemetry anomaly detection using CNN + RNN architectures to identify abnormal patterns in time-series data.</div>
-      <div class="proj-impact">Reduced anomaly detection time by 35% vs traditional threshold methods</div>
+      <div class="proj-title">Spacecraft Anomaly Detection — Explainable Multi-Modal Digital Twin</div>
+      <div class="proj-desc">A full end-to-end research pipeline for detecting anomalies in spacecraft telemetry, combining deep learning, graph neural networks, multi-modal fusion, explainability, and a generative digital twin visualiser.</div>
+      <div class="proj-impact">GNN-VAE achieves F1=0.971, closely matching the STGLR paper target of F1≈0.98.
+Multimodal Fusion further improves detection delay from 5.2 to 3.1 steps.
+All deep models outperform classical baselines by >20 F1 points.</div>
       <div class="proj-acc-row">
         <span class="proj-acc-label">Test Accuracy</span>
         <div class="proj-acc-bar"><div class="proj-acc-fill" data-w="89"></div></div>
         <span class="proj-acc-val">89%</span>
       </div>
       <div class="proj-tags">
-        <span class="proj-tag">TensorFlow</span><span class="proj-tag">CNN</span><span class="proj-tag">RNN</span><span class="proj-tag">Keras</span><span class="proj-tag">NumPy</span>
+        <span class="proj-tag">Isolation Forest</span><span class="proj-tag">GNN-VAE</span><span class="proj-tag">Transformer</span><span class="proj-tag">LSTM-AE (MLP)</span><span class="proj-tag">Keras</span><span class="proj-tag">PCA-AE</span><span class="proj-tag">Mahalanobis</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
-        <button class="btn btn-sm btn-cyan" onclick="openModal('p1')"> Case Study</button>
+        <a href="https://github.com/HarshIIT01/XAI-SPACECRAFT-ANOMALY-DETECTION-MULTI-MODEL-SYSTEM" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
+        <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
 
@@ -625,8 +644,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
-        <button class="btn btn-sm btn-cyan" onclick="openModal('p2')"> Case Study</button>
+        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
+        <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
 
@@ -648,7 +667,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-tag">Python</span><span class="proj-tag">spaCy</span><span class="proj-tag">NLP</span><span class="proj-tag">Flask</span><span class="proj-tag">NLTK</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
+        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
         <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
@@ -671,8 +690,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-tag">PyTorch</span><span class="proj-tag">Transformers</span><span class="proj-tag">NLTK</span><span class="proj-tag">Python</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
-        <button class="btn btn-sm btn-cyan" onclick="openModal('p4')">📄 Case Study</button>
+        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
+        <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
 
@@ -694,8 +713,8 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-tag">TensorFlow</span><span class="proj-tag">OpenCV</span><span class="proj-tag">MobileNetV2</span><span class="proj-tag">Python</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
-        <button class="btn btn-sm btn-cyan" onclick="openModal('p5')"> Case Study</button>
+        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
+        <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
 
@@ -717,14 +736,14 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
         <span class="proj-tag">Flask</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">SHAP</span><span class="proj-tag">HTML/CSS</span><span class="proj-tag">REST API</span>
       </div>
       <div class="proj-btns" onclick="event.stopPropagation()">
-        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline">⌨ GitHub</a>
+        <a href="https://github.com/HarshIIT01" target="_blank" class="btn btn-sm btn-outline"><img src="github.png" alt=""> GitHub</a>
         <a href="#" class="btn btn-sm btn-green"> Live Demo</a>
       </div>
     </div>
 
   </div>
 </section>
-
+  
 <!-- ══ CASE STUDY MODAL ══ -->
 <div id="modal-overlay" onclick="closeModal(event)">
   <div class="modal" id="modalContent">
@@ -895,7 +914,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
     <a href="https://www.linkedin.com/in/harshit-g-625987280/" target="_blank">LinkedIn</a>
     <a href="mailto:harshit.goswami.engg@gmail.com">Email</a>
   </div>
-  <a href="#hero" class="back-top" title="Back to top">↑</a>
+  <a href="#hero" class="back-top" title="Back to top">🔝</a>
 </footer>
 
 <script>
@@ -1039,10 +1058,10 @@ function initGHGraph(){
 
 // ══ CASE STUDY DATA ══
 const caseStudies={
-  p1:{title:'Anomaly Detection in Spacecraft',cat:'Deep Learning',
-    problem:'Spacecraft telemetry generates thousands of sensor readings per second. Identifying anomalous patterns manually is error-prone and delayed. The goal was to automate real-time anomaly detection with high precision.',
-    approach:'Built a hybrid CNN-RNN architecture. CNNs extract local temporal features from sliding windows of sensor readings. LSTM layers capture long-range dependencies. Trained on labeled telemetry dataset with 10K+ samples.',
-    model:'CNN (3 conv layers, max pooling) → Flatten → LSTM (128 units) → Dense → Sigmoid. Binary cross-entropy loss, Adam optimizer, early stopping on validation loss.',
+  p1:{title:'Spacecraft Anomaly Detection — Explainable Multi-Modal Digital Twin',cat:'Deep Learning',
+    problem:'Spacecraft telemetry generates thousands of sensor readings per second. Identifying anomalous patterns manually is error-prone and delayed. The goal was to automate real-time anomaly detection with high precision with explainability and a visual digital twin for insights.',
+    approach:'Implemented a multi-model pipeline: GNN-VAE for graph-based anomaly detection, Transformer for sequence modeling, and LSTM-AE for reconstruction error analysis. Fused multi-modal features with attention mechanisms. Developed a generative digital twin using GANs to visualize normal vs anomalous states.',
+    model:'GNN-VAE: Graph Neural Network Variational Autoencoder with 3 GCN layers and latent dim=64. Transformer: 4 layers, 8 heads, d_model=128. LSTM-AE: 2-layer LSTM encoder-decoder with latent dim=32. GAN: DCGAN architecture for digital twin generation.',
     results:[{n:'89%',l:'Test Accuracy'},{n:'35%',l:'Faster Detection'},{n:'10K+',l:'Data Samples'}]},
   p2:{title:'Electricity Consumption Prediction',cat:'Machine Learning',
     problem:'Energy companies struggle to optimize distribution due to unpredictable consumption spikes. Accurate forecasting helps prevent outages and reduce waste.',
@@ -1156,7 +1175,7 @@ function submitForm(){
 // ══ RESUME DOWNLOAD ══
 function downloadResume(e){
   e.preventDefault();
-  window.open('https://drive.google.com/file/d/1EN29Hhe4CetI9l3_3llYMzCAPWKH5Jjn/view?usp=sharing', '_blank');
+  window.open('https://drive.google.com/file/d/1vBKSYumqdCdRXX8RXES7wtpoAhIXPeHk/view?usp=sharing', '_blank');
 }
 
 // ══ NAV ACTIVE ══
