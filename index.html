@@ -333,7 +333,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 5%;display:flex;justif
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#blog">Blog</a></li>
+    <!-- <li><a href="#blog">Blog</a></li> -->
     <li><a href="#ai-feature">AI Demo</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -751,7 +751,7 @@ All deep models outperform classical baselines by >20 F1 points.</div>
   </div>
 </div>
 
-<!-- ══ BLOG ══ -->
+<!-- ══ BLOG ══
 <section id="blog">
   <div class="sec-label">Blog & Articles</div>
   <h2 class="sec-title">Thoughts &amp; <span class="hl">Insights</span></h2>
@@ -794,10 +794,10 @@ All deep models outperform classical baselines by >20 F1 points.</div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ══ GITHUB GRAPH ══ -->
-<section id="github">
+<!-- <section id="github">
   <div class="sec-label">Open Source</div>
   <h2 class="sec-title">GitHub <span class="hl">Activity</span></h2>
   <div class="sec-line"></div>
@@ -828,7 +828,7 @@ All deep models outperform classical baselines by >20 F1 points.</div>
       <span>More</span>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ══ AI INTERACTIVE FEATURE ══ -->
 <section id="ai-feature">
@@ -1031,29 +1031,29 @@ function initFilters(){
 }
 
 // ══ GITHUB GRAPH ══
-function initGHGraph(){
-  const canvas=document.getElementById('gh-canvas');
-  if(!canvas)return;
-  const ctx=canvas.getContext('2d');
-  const W=canvas.clientWidth||700;
-  canvas.width=W;
-  const cols=52,rows=7,sz=11,gap=3;
-  const colors=['#161b22','#0e4429','#006d32','#26a641','#39d353'];
-  const seed=42;
-  function rand(i){let x=Math.sin(i+seed)*10000;return x-Math.floor(x);}
-  for(let c=0;c<cols;c++){
-    for(let r=0;r<rows;r++){
-      const idx=c*rows+r;
-      const v=rand(idx);
-      let ci=0;
-      if(v>0.9)ci=4;else if(v>0.75)ci=3;else if(v>0.55)ci=2;else if(v>0.35)ci=1;
-      ctx.fillStyle=colors[ci];
-      ctx.beginPath();
-      ctx.roundRect(c*(sz+gap),r*(sz+gap),sz,sz,2);
-      ctx.fill();
-    }
-  }
-}
+// function initGHGraph(){
+//   const canvas=document.getElementById('gh-canvas');
+//   if(!canvas)return;
+//   const ctx=canvas.getContext('2d');
+//   const W=canvas.clientWidth||700;
+//   canvas.width=W;
+//   const cols=52,rows=7,sz=11,gap=3;
+//   const colors=['#161b22','#0e4429','#006d32','#26a641','#39d353'];
+//   const seed=42;
+//   function rand(i){let x=Math.sin(i+seed)*10000;return x-Math.floor(x);}
+//   for(let c=0;c<cols;c++){
+//     for(let r=0;r<rows;r++){
+//       const idx=c*rows+r;
+//       const v=rand(idx);
+//       let ci=0;
+//       if(v>0.9)ci=4;else if(v>0.75)ci=3;else if(v>0.55)ci=2;else if(v>0.35)ci=1;
+//       ctx.fillStyle=colors[ci];
+//       ctx.beginPath();
+//       ctx.roundRect(c*(sz+gap),r*(sz+gap),sz,sz,2);
+//       ctx.fill();
+//     }
+//   }
+// }
 
 // ══ CASE STUDY DATA ══
 const caseStudies={
