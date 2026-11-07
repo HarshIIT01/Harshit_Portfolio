@@ -44,28 +44,6 @@ This portfolio combines futuristic UI design with interactive animations, projec
 
 ---
 
-## Project Structure
-
-```bash
-portfolio/
-│
-├── index.html
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── resume/
-│
-├── styles/
-│   └── style.css
-│
-├── scripts/
-│   └── main.js
-│
-└── README.md
-```
-
----
-
 ## Sections Included
 
 - Hero Section
@@ -82,53 +60,6 @@ portfolio/
 
 ---
 
-## Highlighted Projects
-
-### Spacecraft Anomaly Detection System
-An explainable multi-modal anomaly detection system using Deep Learning, Graph Neural Networks, Transformers, and Autoencoders for spacecraft telemetry analysis.
-
-### AI Resume Analyzer
-An NLP-powered resume screening system with intelligent skill extraction and job-match scoring.
-
-### Real-Time Object Detection
-Computer vision pipeline built using TensorFlow, OpenCV, and MobileNetV2 for high-speed real-time inference.
-
-### ML Prediction Dashboard
-A Flask-based deployment dashboard with explainable AI integration and REST API support.
-
----
-
-## Installation & Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/portfolio.git
-```
-
-Open the project folder:
-
-```bash
-cd portfolio
-```
-
-Run locally:
-
-Simply open `index.html` in your browser.
-
----
-
-## Deployment
-
-You can deploy this portfolio using:
-
-- GitHub Pages
-- Vercel
-- Netlify
-- Firebase Hosting
-
----
-
 ## Preview
 
 ```text
@@ -140,27 +71,6 @@ Modern AI/ML Portfolio with:
 ✔ Responsive Design
 ```
 
----
-
-## Future Improvements
-
-- Backend integration for contact form
-- Live blog CMS
-- Dynamic GitHub API integration
-- AI chatbot powered by LLM APIs
-- Dark/Light theme toggle
-- Admin dashboard for project management
-
----
-
-## Contributing
-
-Contributions, suggestions, and improvements are welcome.
-
-Fork the repository and submit a pull request to contribute.
-
----
-
 ## Contact
 
 **Harshit Goswami**  
@@ -169,19 +79,4 @@ AI/ML Engineer & Research Enthusiast
 - GitHub: https://github.com/HarshIIT01
 - Email: harshit.goswami.engg@gmail.com
 
----
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Support
-
-If you like this project, consider giving it a star on GitHub.  
-It helps support and motivate future development.
-
----
-
-Built with passion for AI, innovation, and impactful technology. 
