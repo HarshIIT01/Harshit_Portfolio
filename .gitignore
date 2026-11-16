@@ -1,0 +1,17 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Editor & IDE Configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary & Log Files
+*.log
+.temp/
+.tmp/
